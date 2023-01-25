@@ -1,30 +1,19 @@
-import React, { useState } from "react";
-import {
-  StyleSheet,
-  View,
-  TextInput,
-} from "react-native";
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function App() {
-  const [value, setValue] = useState("");
-  const inputHandler = (text) => setValue(text);
   return (
-      <View style={styles.container}>
-        <TextInput
-          placeholder="Type text"
-          value={value}
-          onChangeText={inputHandler}
-        />
-      </View>
-  );
+    <View style={styles.container}>
+      <Text>wwwww</Text>
+    </View>
+  )
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    
-    justifyContent: "flex-end",
-    paddingBottom: 30
-  },
-});
+    backgroundColor: "green",
+    alignItems: "center",
+    justifyContent:"center"
+  }
+})
